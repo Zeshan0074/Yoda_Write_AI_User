@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* //This is for scrolling Effect */
+::-webkit-scrollbar {
+    width: 0.111rem;
+    height: 0rem;
+}
+::-webkit-scrollbar-track {
+    background: theme-color("site-secondary1");
+   
+}
+::-webkit-scrollbar-thumb {
+    background-color: #CECECE;
+    /* color of the scroll thumb */
+    border-radius: 1.25rem;
+    /* roundness of the scroll thumb */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #A8A8A8;
+}
+
+/* Body Font family */
+body{
+    font-family: sans-serif;
+}
+
+/* Text template AI style manage here */
+.text-template-btn{
+    padding: 8px;
+    margin: 0px 10px 0px 10px;
+    
+}
+
+/* This styling is for the header */
+.headerNavlink{
+  margin: 0px 4px 0px 4px;
+}
+.headerNavlink:hover{
+  color: #ff084a;
+  cursor: pointer;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent text wrapping to the next line */
+  }
+.text-template-btn:hover {
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+/* Feature overview list style */
+
+.content-creation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: auto;
+}
+
+
+
+
+
+.picture-gallery {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(17, 11, 11);
+  }
+  
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    animation: moveUpAndRotate 30s linear infinite;
+  }
+  
+  .column.reverse {
+    animation: moveDownAndRotate 30s linear infinite;
+  }
+  
+  .picture {
+    
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    margin: 5px;
+    border-radius: 10px;
+    animation: rotate 30s linear infinite;
+    background-image: url('../img/firmy-review.png');
+    background-image: url('../img/textory-logo.png');
+
+    /* Set other background properties if needed */
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  
