@@ -9,14 +9,11 @@ import AllTextTemplates from '../components/global/AllTextTemplates'
 import SubscriptionPlans from '../components/global/SubscriptionPlans'
 import FeaturesOverview from '../components/global/FeaturesOverview'
 import Partners from '../components/global/Partners'
-import Signin from './auth/Signin'
-import Signup from './auth/Signup'
 
 const MainData = () => {
   return (
     <>
-      
-        <HeroSection />
+      <HeroSection />
         <HowAIwork />
         <FeaturesOverview />
         <StartWriting />
@@ -26,8 +23,8 @@ const MainData = () => {
         <SubscriptionPlans/>
         <Faq />
         <ContactUs />
-        {/* <Signin/>
-        <Signup/> */}
+      
+     
 
 
     </>

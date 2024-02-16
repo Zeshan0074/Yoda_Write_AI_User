@@ -10,14 +10,14 @@ import { CiCircleQuestion } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 const HeroSection = () => {
     return (
-        <Container fluid className='bg-[#070d2b]'>
-            <Container className='py-12  text-white'>
+        <Container fluid className='bg-[#070d2b] pt-20'>
+            <Container className='py-12  text-white px-3 md:px-5'>
                 <Row>
-                    <Col lg={6} className=' p-4'>
-                        <p className='sm:text-center text-5xl py-5 px-2 font-bold'>Artificial Intelligence that will do it for you  <br />
+                    <Col lg={6} className=''>
+                        <p className=' text-3xl md:text-5xl py-3 font-bold'>Artificial Intelligence that will do it for you  <br />
 
                             <Typed
-                                className='text-[#3a7db4] text-5xl'
+                                className='text-[#ff084a] text-3xl md:text-5xl'
                                 strings={[' ze slov umění,', ' z obrázků příběh,', 'a z chatu zábavu!']}
                                 typeSpeed={100}
                                 loop={true}
@@ -27,11 +27,13 @@ const HeroSection = () => {
                         <p>Enter a new era of content creation! Thanks to artificial intelligence, you can look forward to excellent blog posts, articles and social media posts effortlessly.</p>
 
                         <Row className='pt-12 pb-8 sm:mx-auto'>
+                            <Col>
                             <Link to="/signup">
-                            <Button className='bg-[#ff084a] mx-1 my-3 font-bold text-lg px-2 py-1 lg:px-5 lg:py-[10px] flex items-center'> < BsFillLightningChargeFill className='mx-2' /> TRY IT FOR FREE</Button>
+                            <button className='bg-[#ff084a] mx-1 my-3 font-bold text-lg px-2 py-1 lg:px-5 lg:py-[10px] flex items-center'> < BsFillLightningChargeFill className='mx-2' /> TRY IT FOR FREE</button>
                             </Link>
-                            <Button className='bg-white text-black mx-1 my-3 font-bold text-lg px-2 py-1 lg:px-5 lg:py-[10px] flex items-center'> <CiCircleQuestion className='mx-2' /> Example of use</Button>
+                            <button className='bg-white text-black mx-1 my-3 font-bold text-lg px-2 py-1 lg:px-5 lg:py-[10px] flex items-center'> <CiCircleQuestion className='mx-2' /> Example of use</button>
                             <p className='py-3 '> It does not require payment card details</p>
+                            </Col>
                         </Row>
 
                         <Row>

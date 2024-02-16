@@ -35,21 +35,21 @@ const Header = () => {
         <div className='hidden lg:block  font-semibold'>
           <div className='flex items-center gap-3'>
             <div className='hidden lg:block d-xl-flex'>
-              <Link to="/signin">
-                <Button className='mx-1 my-2 w-[100px] flex items-center justify-center bg-[#ff084a] border-0 hover:bg-[#4754c4]'>
+              
+                <div className='flex items-center justify-center gap-x-1  px-2 py-1 rounded-lg mx-2 bg-[#ff084a]  hover:bg-[#4754c4]'>
                   <FiUser />
-                  <p className='mx-1'>LOGIN</p>
-                </Button>
-              </Link>
-              <Link to="/signup">
-                <Button className='mx-1 my-2 w-[100px] flex items-center justify-center bg-[#2E2252] border-0 hover:bg-[#27445C]'>
+                  <Link to="/signin"> <button className='hover:text-white'>LOGIN</button></Link>
+                </div>
+              
+              
+                <div className='flex items-center justify-center gap-x-1 px-2 py-1 rounded-lg mx-2 bg-[#2E2252] hover:bg-[#27445C] '>
                   <FiLock />
-                  <p>Sign Up</p>
-                </Button>
-              </Link>
+                  <Link to="/signup">  <button className='hover:text-white'>Sign Up</button>  </Link>
+                </div>
+             
             </div>
             <div className='hidden lg:block font-bold'>
-              <TfiWorld />
+            <TfiWorld size={25}/>
             </div>
           </div>
         </div>
@@ -71,28 +71,28 @@ const Header = () => {
           )}
 
           <ul className={`fixed h-full w-full md:h-[390px] bg-[#070d2b] top-[75px] lg:hidden ${toggle ? 'left-[0]' : 'left-[-100%]'} px-8 py-8 font-bold `}>
-            <li className='mx-2 my-3 hover:cursor-pointer hover:text-[#ff084a]'> Home</li>
-            <li className='mx-2 my-3 hover:cursor-pointer hover:text-[#ff084a]'> Funkcion</li>
-            <li className='mx-2 my-3 hover:cursor-pointer hover:text-[#ff084a]'> Prices</li>
-            <li className='mx-2 my-3 hover:cursor-pointer hover:text-[#ff084a]'> Blogs</li>
-            <li className='mx-2 my-3 hover:cursor-pointer hover:text-[#ff084a]'> FAQs</li>
-            <li className='mx-2 my-3 hover:cursor-pointer hover:text-[#ff084a]'> Contact Us</li>
+            <li className='headerNavlink'> Home</li>
+            <li className='headerNavlink'> Funkcion</li>
+            <li className='headerNavlink'> Prices</li>
+            <li className='headerNavlink'> Blogs</li>
+            <li className='headerNavlink'> FAQs</li>
+            <li className='headerNavlink'> Contact Us</li>
             <div className='flex lg:hidden  d-xl-flex'>
               <Link to="/signin">
-                <Button className='mx-1 my-4 rounded-lg lg:my-2 w-[100px] text-black flex text-sm items-center justify-center bg-[#ff084a] border-0 hover:bg-[#4754c4]'>
+                <button className='mx-1 my-4 rounded-lg  text-black flex text-sm items-center justify-center bg-[#ff084a] border-0 hover:bg-[#4754c4]'>
                   <FiUser />
-                  <p className='mx-1 '> LOGIN</p>
-                </Button>
+                  <p className='mx-1 hover:text-'> LOGIN</p>
+                </button>
               </Link>
               <Link to="/signup">
-                <Button className='mx-1 my-4 rounded-lg lg:my-2 w-[100px] flex items-center justify-center bg-[#2E2252] border-0 hover:bg-[#27445C]'>
+                <Button className='mx-1 my-4 rounded-lg flex items-center justify-center bg-[#2E2252] border-0 hover:bg-[#27445C]'>
                   <FiLock />
-                  <p>Sign Up</p>
+                  <button>Sign Up</button>
                 </Button>
               </Link>
             </div>
             <div className=' lg:hidden font-bold mx-auto '>
-              <TfiWorld />
+              <TfiWorld size={25}/>
             </div>
           </ul>
         </div>
